@@ -1,6 +1,8 @@
 VA Check Old Password
 ==============================
 
+![](./banner-772x250.jpg)
+
 This is a WordPress plugin that confirm old password before changing to new password.
 
 ## Contribute!
