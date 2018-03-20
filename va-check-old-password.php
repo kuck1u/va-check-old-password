@@ -133,8 +133,7 @@ class _VA_CHECK_OLD_PASSWORD {
 				$errors->add( 'vacop_pass_old', __( '<strong>ERROR</strong>: Please enter your old password.', sprintf( '%s', VA_CHECK_OLD_PASSWORD_TEXTDOMAIN ) ) );
 			} else {
 				$user  = get_userdata( $user->ID );
-				$sanitized_va_pass = sanitize_text_field($_POST['vacop_pass_old']);  
-				$check = wp_check_password( $sanitized_va_pass, $user->data->user_pass, $user->data->ID );
+				$check = wp_check_password( $_POST['vacop_pass_old'], $user->data->user_pass, $user->data->ID );
 
 				if ( !$check ) {
 					$errors->add( 'vacop_pass_old', __( '<strong>ERROR</strong>: An old password is wrong.', sprintf( '%s', VA_CHECK_OLD_PASSWORD_TEXTDOMAIN ) ) );
