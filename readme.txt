@@ -31,7 +31,7 @@ To install VA Check Old Password:
 == Changelog ==
 
 = 1.0.1 =
-* [Fixed] A bug that confirmed the old password when creating a new user..
+* [Fixed] A bug that confirmed the old password when creating a new user.
 
 = 1.0.0 =
 * First public release.
